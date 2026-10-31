@@ -389,7 +389,7 @@ static const unsigned char* decodeBytesGroup(const unsigned char* data, unsigned
 		memcpy(buffer, data, kByteGroupSize);
 		return data + kByteGroupSize;
 	default:
-		assert(!"Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
+		assert(false && "Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
 		return data;
 	}
 
@@ -615,7 +615,7 @@ static const unsigned char* decodeBytesGroupSimd(const unsigned char* data, unsi
 	}
 
 	default:
-		assert(!"Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
+		assert(false && "Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
 		return data;
 	}
 }
@@ -674,7 +674,7 @@ static const unsigned char* decodeBytesGroupSimd(const unsigned char* data, unsi
 	}
 
 	default:
-		assert(!"Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
+		assert(false && "Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
 		return data;
 	}
 }
@@ -797,7 +797,7 @@ static const unsigned char* decodeBytesGroupSimd(const unsigned char* data, unsi
 	}
 
 	default:
-		assert(!"Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
+		assert(false && "Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
 		return data;
 	}
 }
@@ -897,7 +897,7 @@ static const unsigned char* decodeBytesGroupSimd(const unsigned char* data, unsi
 	}
 
 	default:
-		assert(!"Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
+		assert(false && "Unexpected bit length"); // unreachable since bitslog2 is a 2-bit value
 		return data;
 	}
 }
